@@ -4,7 +4,7 @@ import ChatPage from "./components/ChatPage";
 import socketIO from "socket.io-client";
 
 const socket = socketIO.connect(
-  "https://nodejs-chat-app-whatsfake.herokuapp.com/",
+  "https://nodejs-chat-app-whatsfake.herokuapp.com",
   {
     withCredentials: true,
     extraHeaders: {
