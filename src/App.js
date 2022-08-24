@@ -4,15 +4,8 @@ import ChatPage from "./components/ChatPage";
 import socketIO from "socket.io-client";
 
 const socket = socketIO.connect(
-  "https://nodejs-chat-app-whatsfake.herokuapp.com",
-  {
-    withCredentials: true,
-    extraHeaders: {
-      "my-custom-header": "abcd",
-    },
-  }
+  "https://nodejs-chat-app-whatsfake.herokuapp.com"
 );
-
 function App() {
   return (
     <BrowserRouter>
